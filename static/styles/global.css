@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+:root {
+	--primary-white: #EBEAE8;
+	--primary-black: #090909;
+
+	--title-font: 'BNP Bold', sans-serif;
+	--body-font: Montserrat, sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Font imports                                */
+/* -------------------------------------------------------------------------- */
+@font-face {
+	font-weight: 400;
+	src: url('../fonts/BebasNeue-Regular.ttf');
+	font-family: 'Bebas Neue';
+}
+
+@font-face {
+	font-weight: 400;
+	src: url('../fonts/BebasNeue-ProRegular.otf');
+	font-family: 'BNP Regular';
+}
+
+@font-face {
+	font-weight: 400;
+	src: url('../fonts/BebasNeue-ProLight.otf');
+	font-family: 'BNP Light';
+}
+
+@font-face {
+	font-weight: 400;
+	src: url('../fonts/BebasNeue-ProThin.otf');
+	font-family: 'BNP Thin';
+}
+
+@font-face {
+    font-weight: 800;
+    src: url('../fonts/BebasNeue-ProBold.otf');
+    font-family: 'BNP Bold';
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Resets                                   */
+/* -------------------------------------------------------------------------- */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   General                                  */
+/* -------------------------------------------------------------------------- */
+html {
+	scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+	background: rgb(147, 147, 147);
+	background: linear-gradient(
+		337deg,
+		rgba(147, 147, 147, 1) 0%,
+		rgba(235, 234, 232, 1) 20%,
+		rgba(235, 234, 232, 1) 80%,
+		rgba(147, 147, 147, 1) 100%
+	) no-repeat fixed;
+	font-family: var(--body-font);
+}
