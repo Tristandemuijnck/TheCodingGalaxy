@@ -1,5 +1,6 @@
 <script>
     import PlanetHero from "$lib/components/PlanetHero.svelte";
+	import Posts from "$lib/components/Posts.svelte"
 </script>
 
 <!-- Nav menu collapsible on mobile -->
@@ -14,6 +15,9 @@
 
 <!-- Hero -->
 <PlanetHero />
+
+<!-- Posts -->
+<Posts />
 
 
 <style>
