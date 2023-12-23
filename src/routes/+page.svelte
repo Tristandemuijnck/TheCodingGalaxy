@@ -1,6 +1,7 @@
 <script>
-    import PlanetHero from "$lib/components/PlanetHero.svelte";
-	import Posts from "$lib/components/Posts.svelte"
+    import PlanetHero from "../lib/components/PlanetHero.svelte";
+	import Posts from "../lib/components/Posts.svelte"
+	import Blob from "../lib/components/Blob.svelte"
 </script>
 
 <!-- Nav menu collapsible on mobile -->

@@ -1,3 +1,7 @@
+<script>
+    import Blob from "./Blob.svelte";
+</script>
+
 <!-- Rotating planet with text and rings around it -->
 <section>
 	<div class="galaxy">
@@ -24,7 +28,14 @@
 		</h1>
 
 		<img class="rings" src="images/fullrings.svg" alt="" />
+        <Blob topAbsolute={"5rem"} leftAbsolute={"8rem"}/>
 	</div>
+
+    <div class="blobs">
+        <Blob bottomAbsolute={"9rem"} rightAbsolute={"-1.5rem"} blobWidth={"155px"} rotateBlob={"180deg"}/>
+        <Blob bottomAbsolute={"0.5rem"} leftAbsolute={"-5rem"} blobWidth={"180px"} rotateBlob={"180deg"}/>
+    </div>
+
 
 	<a href="#posts">Launch</a>
 </section>
@@ -33,22 +44,36 @@
 	section {
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 100dvh;
+        overflow-x: hidden;
 	}
 
 	.galaxy {
 		display: flex;
-		position: relative;
+		position: absolute;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -28%);
 	}
+
+    .blobs{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
 	.planet {
 		position: absolute;
 		animation: orbit 90s linear infinite;
 		width: 15rem;
 		height: 15rem;
+        z-index: 1;
 	}
 
 	.rings {
@@ -61,6 +86,7 @@
 		margin: 0 auto;
 		width: 50px;
 		font-size: 70px;
+        z-index: 1;
 	}
 
 	.title span {
